@@ -1,0 +1,15 @@
+{
+  "name": "drider",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "author": "Jake Overall <joverall22@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakeoverall/drider"
+  }
+}
