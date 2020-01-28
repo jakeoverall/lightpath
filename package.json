@@ -11,5 +11,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jakeoverall/drider"
+  },
+  "bugs": {
+    "url": "https://github.com/jakeoverall/drider/issues"
   }
 }

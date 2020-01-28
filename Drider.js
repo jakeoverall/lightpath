@@ -1,9 +1,9 @@
 class RequestError extends Error {
-  constructor(msg, response, data = {}) {
+  constructor(msg, response, body = {}) {
     super(msg);
     this.response = response;
     this.status = response.status;
-    this.data = data;
+    this.body = body;
   }
 }
 class RequestTimeout extends Error {
@@ -13,7 +13,7 @@ class RequestTimeout extends Error {
   }
 }
 
-export class Drider {
+export default class Drider {
   constructor({
     baseURL = "",
     headers = {},
