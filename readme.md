@@ -9,7 +9,7 @@ Another Browser based HTTP request wrapper.
 - Promise Based
 - Supports Async Await
 - Less opinonated than axios
-- Easy Error handeling
+- Easy Error handling
 
 ### Install
 
