@@ -1,3 +1,5 @@
+![Logo](lightpath-logo.png)
+
 # LightPath
 
 Another Browser based HTTP request wrapper.
