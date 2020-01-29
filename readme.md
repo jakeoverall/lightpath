@@ -65,3 +65,17 @@ class RequestTimeout extends Error {
   }
 }
 ```
+
+### Configure Instance Options
+
+```javascript
+let instance = new LightPath({
+  baseURL = "",
+  headers = {},
+  query = "",
+  timeout = 8000,
+  onRequest = (url, options) => {},
+  onComplete = data => {},
+  onError = err => {}
+})
+```
