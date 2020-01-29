@@ -1,8 +1,9 @@
-# Drider
+# LightPath
 
-Another Browser based HTTP request wrapper. 
+Another Browser based HTTP request wrapper.
 
 ### Why?
+
 - Promise Based
 - Supports Async Await
 - Less opinonated than axios
@@ -11,43 +12,42 @@ Another Browser based HTTP request wrapper.
 ### Install
 
 ```terminal
-> npm i drider
+> npm i lightpath
 ```
 
 ### Usage
 
 ```javascript
-import Drider from "drider"
+import LightPath from "lightpath";
 
 // Create Instances
-let api = new Drider({
-  baseURL: "http://localhost:5000", 
-  timeout: 8000, 
-  headers: { authorization: "Bearer token"}, 
-  query: "?api_key=1234567" 
-})
+let api = new LightPath({
+  baseURL: "http://localhost:5000",
+  timeout: 8000,
+  headers: { authorization: "Bearer token" },
+  query: "?api_key=1234567"
+});
 
-async function testGetInstance(url){
+async function testGetInstance(url) {
   try {
-   await api.get(url)
-  }catch(e){
-   console.log(e)
+    await api.get(url);
+  } catch (e) {
+    console.log(e);
   }
 }
 
 // Or use directly
-async function testGet(url){
-  try{
-    await Drider.get(url)
-  }catch(e){
-    console.log(e)
+async function testGet(url) {
+  try {
+    await Drider.get(url);
+  } catch (e) {
+    console.log(e);
   }
 }
-
 ```
 
-
 ### Error Types
+
 ```javascript
 class RequestError extends Error {
   constructor(msg, response, body = {}) {

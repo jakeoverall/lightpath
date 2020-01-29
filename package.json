@@ -1,18 +1,18 @@
 {
-  "name": "drider",
+  "name": "lightpath",
   "version": "0.0.1",
   "description": "",
   "files": [
-    "index.js"
+    "LightPath.js"
   ],
-  "main": "index.js",
+  "main": "LightPath.js",
   "author": "Jake Overall <joverall22@gmail.com>",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jakeoverall/drider"
+    "url": "https://github.com/jakeoverall/lightpath"
   },
   "bugs": {
-    "url": "https://github.com/jakeoverall/drider/issues"
+    "url": "https://github.com/jakeoverall/lightpath/issues"
   }
 }

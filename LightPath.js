@@ -13,7 +13,7 @@ class RequestTimeout extends Error {
   }
 }
 
-export default class Drider {
+export default class LightPath {
   constructor({
     baseURL = "",
     headers = {},
@@ -53,21 +53,6 @@ export default class Drider {
         }
       }, this.timeout);
       let res = await this.__start_request(url, signal, options);
-      // READ STREAM
-      // let reader = res.body.getReader();
-      // await processResult(0);
-      // async function processResult(result) {
-      //   if ((result = 0)) {
-      //     return await reader.read().then(processResult);
-      //   }
-      //   if (!result || result.done) {
-      //     return;
-      //   }
-      //   this.showProgressBar(result);
-      //   return await reader.read().then(processResult);
-      // }
-
-      // reader.releaseLock();
       done = true;
       let data;
       try {
