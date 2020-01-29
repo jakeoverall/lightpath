@@ -41,7 +41,7 @@ async function testGetInstance(url) {
 // Or use directly
 async function testGet(url) {
   try {
-    await Drider.get(url);
+    await LightPath.get(url);
   } catch (e) {
     console.log(e);
   }
