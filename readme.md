@@ -1,4 +1,4 @@
-![Logo](lightpath-logo.png)
+<img src="lightpath-logo.png" alt="Logo" style="max-width:100%;" height="150">
 
 # LightPath
 
