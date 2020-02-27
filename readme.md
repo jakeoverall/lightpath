@@ -13,6 +13,10 @@ Another Browser based HTTP request wrapper.
 
 ### Install
 
+```html
+<script src="https://cdn.jsdelivr.net/gh/jakeoverall/lightpath/dist/ligthpath.browser.min.js"></script>
+```
+
 ```terminal
 > npm i lightpath
 ```
