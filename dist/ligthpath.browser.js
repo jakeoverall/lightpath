@@ -90,6 +90,7 @@ var LightPath = /*#__PURE__*/function () {
     this.onRequest = onRequest;
     this.onComplete = onComplete;
     this.onError = onError;
+    this.defaultOptions = _ref
 
     if (this.defaultQuery && this.defaultQuery[0] != "?") {
       this.defaultQuery = "?" + this.defaultQuery;
@@ -144,6 +145,7 @@ var LightPath = /*#__PURE__*/function () {
     key: "__start_request",
     value: async function __start_request(url, signal, options) {
       return fetch(url, {
+        ...this.defaultOptions,
         signal: signal,
         method: "GET",
         headers: {

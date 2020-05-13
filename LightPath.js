@@ -19,17 +19,21 @@ export default class LightPath {
     headers = {},
     query = "",
     timeout = 8000,
-    onRequest = (url, options) => {},
-    onComplete = data => {},
-    onError = err => {}
+    onRequest = (url, options) => { },
+    onComplete = data => { },
+    onError = err => { }
   }) {
     this.baseURL = baseURL;
+    /**
+     * @type {{[x:string] : string}}
+     */
     this.defaultHeaders = headers;
     this.defaultQuery = query;
     this.timeout = timeout;
     this.onRequest = onRequest;
     this.onComplete = onComplete;
     this.onError = onError;
+    this.defaultOptions = arguments[0]
 
     if (this.defaultQuery && this.defaultQuery[0] != "?") {
       this.defaultQuery = "?" + this.defaultQuery;
@@ -57,7 +61,7 @@ export default class LightPath {
       let data;
       try {
         data = await res.json();
-      } catch (e) {}
+      } catch (e) { }
       if (res.ok) {
         this.onComplete(data);
         return data;
@@ -75,6 +79,7 @@ export default class LightPath {
 
   async __start_request(url, signal, options) {
     return fetch(url, {
+      ...this.defaultOptions,
       signal,
       method: "GET",
       headers: {
